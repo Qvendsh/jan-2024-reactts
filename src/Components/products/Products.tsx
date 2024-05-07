@@ -18,7 +18,7 @@ const Products: FC = () => {
     return (
         <div>
             {
-                products.map(({id, title, price, brand, discountPercentage, rating, stock, category, thumbnail, description}:IProductTypeProps)=>(
+                products.map(({id, title, price, brand, discountPercentage, rating, stock, category, thumbnail, description,images}:IProductTypeProps, )=>(
                     <Product id={id}
                              title={title}
                              price={price}
@@ -29,6 +29,7 @@ const Products: FC = () => {
                              category={category}
                              thumbnail={thumbnail}
                              description={description}
+                             images={images}
                     />))
             }
         </div>

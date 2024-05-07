@@ -24,13 +24,15 @@ const Product:FC<IProductTypeProps> = ({id,title,description,price,discountPerce
             <h4>{rating}</h4>
             <h4>{stock}</h4>
             <h4>{category}</h4>
-            <h4>{thumbnail}</h4>
+            <h4><img src={thumbnail}/></h4>
             <p>{description}</p>
             <ul>
                 {
-                    images?.map((image:string,index) =><li key={index}>{image}</li>)
+                images?.map((image:string,index) => <li key={index}><img src={image} alt={`Image ${index}`}/></li>)
                 }
             </ul>
+
+
         </div>
     );
 };
