@@ -4,7 +4,7 @@ const FooterComponent = () => {
     return (
         <div>
             <hr/>
-            FooterComponent
+            <h1>I LOVE REACT FOOTER</h1>
         </div>
     );
 };

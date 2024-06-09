@@ -1,13 +1,17 @@
 import React from 'react';
-import {Link} from "react-router-dom";
+import { NavLink} from "react-router-dom";
 
 const HeaderComponent = () => {
     return (
         <div>
-           <Link to="/">home page</Link>
-           <Link to="users">users page</Link>
-           <Link to="posts">posts page</Link>
-           <Link to="comments">comments page</Link>
+            <h1>I LOVE REACT HEADER</h1>
+           <NavLink to="/">home page</NavLink>
+            <br/>
+           <NavLink to="users">users page</NavLink>
+            <br/>
+           <NavLink to="posts">posts page</NavLink>
+            <br/>
+           <NavLink to="comments">comments page</NavLink>
             <hr/>
         </div>
     );
